@@ -3,8 +3,17 @@ require_once "config.php";
 require_once "navigation.php";
 include_once "functions.php";
 if (
-    1
-) { ?>
+    isset($_SESSION["loggedin"])
+) {
+
+
+    $uid = $_SESSION["Users"]["uid"];
+
+
+
+
+
+?>
     <html>
 
     <head>
@@ -32,7 +41,7 @@ if (
                         
                     </div>-->
                     <div class="flex justify-center">
-                        <h2 class="text-2xl font-bold">Contest list</h2>
+                        <h2 class="text-2xl font-bold">My submissions</h2>
                     </div>
                     <hr class="border-t-2 border-gray-300 mt-2 mb-4">
 
