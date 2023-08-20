@@ -6,8 +6,7 @@ require_once "navigation.php";
 include_once "functions.php";
 
 if (
-    isset($_SESSION["loggedin"]) &&
-    $_SESSION["Users"]["status"] == "Normal" || $_SESSION["Users"]["status"] == "Admin"
+    1
 ) { ?>
 
     <head>
@@ -78,6 +77,7 @@ if (
                     color: #007BFF;
                     text-decoration: none;
                 }
+
                 #temp {
                     text-decoration: none;
                     color: black;
@@ -102,8 +102,8 @@ if (
                 }
                 ?>
             </div>
-            
-            
+
+
             <div class="bg-gray-100 py-4 mt-4">
                 <div class="container mx-auto flex justify-center">
                     <a href="<?php echo SITE_URL; ?>/add_blog.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
